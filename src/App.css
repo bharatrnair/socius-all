@@ -724,7 +724,7 @@ h1{
   width:380px;
   background-color: #ffff;
 }
-.postCaption{
+.postingCaption{
   height: 100px;
   width: 400px;
   background-color: #CAB0B0;
@@ -738,4 +738,16 @@ h1{
   font-size: large;
   display: grid;
   gap: 25px;
+}
+.save-mainContainer{
+  background-color: #E1D5D5;
+  height: 100%;
+}
+.save-mainBody{
+  height: 100%;
+  padding: 60px;
+}
+.save-heading{
+  display: flex;
+  gap: 20px;
 }

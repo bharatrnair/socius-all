@@ -23,7 +23,7 @@ const Post = () => {
                 </div>
                 </div>
             
-            <div className="postCaption">
+            <div className="postingCaption">
                    <p>write something....</p>
             </div>
             <div className="postFrom-section">

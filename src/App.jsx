@@ -13,6 +13,7 @@ import Comments from './components/Comments.jsx'
 import Likes from './components/Likes.jsx'
 import StoryViews  from "./components/StoryViews.jsx";
 import Post from "./components/Post.jsx";
+import Save from "./components/Save.jsx"
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
             <Route path="likes" element ={<Likes />}></Route>
             <Route path="storyviews" element ={<StoryViews />}></Route>
             <Route path="post" element ={<Post />}></Route>
+            <Route path="save" element ={<Save />}></Route>
 
         </Routes>
         </BrowserRouter>
