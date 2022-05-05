@@ -60,19 +60,21 @@
     font-size: 36px;
   }
   .signUpSection{
-    padding-left: 10px;
     display: grid;
     gap: 20px; 
+    max-width: 400px;
+    width: 100%;
   }
   .signUpContainer
   {
       display: grid;
       place-items: center;
+      padding: 20px;
   }
   .signUpInput
   {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       gap: 10px;
       
   }
@@ -81,7 +83,6 @@
     background-color: #F9FFFF;
     border-radius: 7px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 300px;
     height: 30px;
     font-size: 16px;
     border: solid 2px #000000;
@@ -90,18 +91,15 @@
   .formField{
     display: grid;
     grid-template-columns: 120px 1fr;
-    gap: 106px;
   }
   .formField input{
     background-color: #ffff;
     border : solid 2px #000000;
     border-radius: 7px;
     height: 48px;
-    width: 375px;
   }
   #signUpButton{
     width: 85px;
-    margin-left: 415px;
     padding: 6px;
     border-radius: 7px;
     background-color: #0E0D0D;
