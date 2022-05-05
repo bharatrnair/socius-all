@@ -5,6 +5,7 @@ import post from './../components/Assets/post.svg'
 import search from './../components/Assets/search.svg'
 import bell from './../components/Assets/bell.svg'
 import settings from './../components/Assets/settings.svg'
+import './Profile.css'
 
 const profile = () => {
   return (
