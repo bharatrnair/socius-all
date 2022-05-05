@@ -12,13 +12,14 @@
   }
   .otpSection{
   background-color: #E1D5D5;
+  padding: 20px;
 }
 .vectorSection{
   background-color: #ffff;
 }
 .otpDetailsSection {
-    margin: auto; 
-    max-width: 50%;
+    /* margin: auto;  */
+    /* max-width: 50%; */
     display: grid;
     gap: 15px;
     margin-top: 40%;
@@ -62,20 +63,22 @@
 }
 .vectorImage img{
   display: grid;
-  padding-left: 75px;
+  padding:20px;
 }
 .vectorSection{
   display: grid;
   place-items: center;
   align-content: center;
   gap: 32px;
+  padding: 20px;
 }
 #three{
   color: black;
   font-size: 20px;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 660px) {
     .mainContainer{
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows:auto;
+        grid-template-columns: unset;
     }
 }
