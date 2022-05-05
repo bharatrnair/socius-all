@@ -1,0 +1,20 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,body,#root{
+    height: 100%;
+  }
+  .save-mainContainer{
+    background-color: #E1D5D5;
+    height: 100%;
+  }
+  .save-mainBody{
+    height: 100%;
+    padding: 60px;
+  }
+  .save-heading{
+    display: flex;
+    gap: 20px;
+  }
