@@ -8,6 +8,7 @@ import online from './../components/Assets/online.svg'
 import like from './../components/Assets/like.svg'
 import dislike from './../components/Assets/dislike.svg'
 import comments from './../components/Assets/comments.svg'
+import "./home.css"
 
 const Home = () => {
   return (

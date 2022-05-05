@@ -20,6 +20,7 @@ html,body,#root{
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+  
 }
 
 .App-header {
@@ -289,104 +290,7 @@ h1{
   display: grid;
   gap:55px;
 }
-.homeBody{
-  background-color: #ffff;
-  display: grid;
-  grid-template-rows: auto 1fr;
-}
-.homeContainer{
-  display: grid;
-  height: 100%;
-  grid-template-rows: 4fr .5fr ;
-}
-.homeFooter{
-  background-color: #E1D5D5;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  text-align: center;
-}
-.storyIcon{
-  background-color: #787b81;
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  padding: 20px;
-}
-.homeStory{
-  padding: 25px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  overflow: auto;
-}
-.homeFeed{
-  display: grid;
-  grid-template-columns: 5fr  3px 1.5fr;
 
-}
-.photoSection{
-  background-color: #ffff; 
-  height: 100%;
-  margin:0 auto;
-  width: 100%;
-  max-width: 700px;
-  overflow: auto;
-  display: grid;
-  grid-template-rows: auto auto auto;
-  gap: 20px;
-  padding:10px
-}
-.onlineSection{
-   background-color: #ffff; 
-  height: 100%;
-  display: grid;
-  gap: 10px;
-}
-.sectionDivider{
-  border-left: solid black;
-  height: 530px;
-
-}
-#onlineHeading{
-  text-align: center;
-  font-size:30px;
-}
-.onlineUser{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 10px;
-}
-.userDp{
-  background-color: #0cc7fb;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-.postHeader{
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 20px;
-  padding-left: 10px;
-}
-.postedPhoto{
-  background-color: rgb(227, 234, 21);
-  height: 300px;
-  padding: 0px 20px;
-  margin: auto;
-  width: 100%;
-  border-radius: 20px;
-
-}
-.postReaction{
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  padding: 0 50px;
-  gap: 20px;
-}
-.postReaction-details{
-  padding-left: 50px;
-  font-weight: bold;
-}
 .Personal-chat-main{
   background-color: #E1D5D5;
   height: 100%;
