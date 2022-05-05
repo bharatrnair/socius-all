@@ -118,6 +118,10 @@ html,body,#root{
     gap: 10px;
     
 }
+.postField{
+  max-height: 435px;
+  overflow: auto;
+}
 
 .formField{
   display: grid;
