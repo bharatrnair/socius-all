@@ -407,6 +407,11 @@ h1{
   padding: 30px;
 
 }
+
+.settings-property h3{
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .settings-section{
   display:grid;
   gap: 20px;
