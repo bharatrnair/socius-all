@@ -57,7 +57,77 @@ h1{
   color: #000000;
 }
 
+.mainSection{
+  display: grid;
+  height: 100%;
+  grid-template-rows: 4fr .5fr ;
+}
+.displayPicture{
+  background-color: grey;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  /* margin: auto; */
+  /* margin-top: 65px; */
+  
+}
+.profileSection{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  /* padding-bottom: 350px;  */
+  gap: 40px;
+  
+}
+.profileFooter{
+  background-color: #E1D5D5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+}
+.footerImage{
+  padding: 5px;
+}
+.friends{
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+  gap:10px;
+}
+.line2{
+  border-left: solid black;
+  height: 28px;
 
+}
+.profileDetails{
+  text-align: center;
+  display: grid;
+  gap:10px;
+}
+.settings{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.postSection{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 150px;
+}
+.image1{
+  background-color: #4a4b4d;
+  height: 120px;
+  width: 150px;
+}
+.image2{
+  background-color: #545558;
+  height: 160px;
+  width: 170px;
+}
+.image3{
+  background-color: #707172;
+  height: 130px;
+  width: 160px;
+}
 .mainChat{
   background-color: #E1D5D5;
   height: 100%;
@@ -337,11 +407,6 @@ h1{
   padding: 30px;
 
 }
-
-.settings-property h3{
-  font-family: 'Courier New', Courier, monospace;
-}
-
 .settings-section{
   display:grid;
   gap: 20px;
