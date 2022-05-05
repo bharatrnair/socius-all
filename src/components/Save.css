@@ -31,7 +31,7 @@
 
   .savePost-body{
     display: grid;
-    grid-template-rows:1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 35px;
     padding: 20px;
   }
@@ -52,3 +52,16 @@
     background-color: rgb(130, 122, 138);
     height: 200px;
   }
+
+  @media screen and (max-width: 900px){
+    .savePost-body{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .savePost-body{
+      grid-template-columns: 1fr;
+    }
+  }
+
