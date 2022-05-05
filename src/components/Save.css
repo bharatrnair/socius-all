@@ -34,7 +34,6 @@
     grid-template-rows:1fr 1fr ;
     gap: 35px;
     padding: 20px;
-    justify-items: center;
   }
 
   .saveUpper-part{
