@@ -251,32 +251,7 @@ h1{
   width: 50px;
   border-radius: 50%;
 }
-.postHeader{
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: 20px;
-  padding-left: 10px;
-}
-.postedPhoto{
-  background-color: rgb(227, 234, 21);
-  height: 300px;
-  padding: 0px 20px;
-  margin: auto;
-  width: 100%;
-  border-radius: 20px;
 
-}
-.postReaction{
-  display: grid;
-  grid-template-columns: auto auto 1fr;
-  padding: 0 50px;
-  gap: 20px;
-}
-.postReaction-details{
-  padding-left: 50px;
-  font-weight: bold;
-}
 .Personal-chat-main{
   background-color: #E1D5D5;
   height: 100%;
@@ -530,43 +505,4 @@ h1{
   display: grid;
   gap: 20px;
 }
-.post-mainContainer{
-  background-color: #E1D5D5;
-  height: 100%;
-}
-.postMain-body{
-  padding: 60px;
-  height: 100%;
-}
-.post-header{
-  display: flex;
-  gap: 50px;
-}
-.postBody-section{
-  padding: 70px;
-}
-.postBody-section{
-  display: flex;
-  gap: 70px;
-  align-items: center;
-}
-.postPhoto-selection{
-  height: 250px;
-  width:380px;
-  background-color: #ffff;
-}
-.postingCaption{
-  height: 100px;
-  width: 400px;
-  background-color: #CAB0B0;
-  border-radius: 30px;
-  padding: 20px;
-  margin-left: 70px;
-}
-.postFrom-section{
-  margin-left: 70px;
-  padding-top: 20px;
-  font-size: large;
-  display: grid;
-  gap: 25px;
-}
+

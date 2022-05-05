@@ -1,6 +1,8 @@
 import React from 'react'
 import Back from "./../components/Assets/back1.svg"
 import PostButton from "./../components/Assets/post2.svg"
+import "./Post.css"
+
 
 const Post = () => {
   return (
