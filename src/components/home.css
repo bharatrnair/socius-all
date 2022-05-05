@@ -34,6 +34,7 @@ html,body,#root{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     overflow: auto;
+    gap: 10px;
   }
   .homeFeed{
     display: grid;
@@ -60,7 +61,7 @@ html,body,#root{
   }
   .sectionDivider{
     border-left: solid black;
-    height: 530px;
+    
   
   }
   #onlineHeading{
@@ -104,8 +105,14 @@ html,body,#root{
     padding-left: 50px;
     font-weight: bold;
   }
-  @media only screen and (max-width: 890px) {
+  @media screen and (max-width: 890px) {
     .homeContainer{
       grid-template-rows: auto;
+    }
+    .homeFeed{
+        grid-template-columns:auto ;
+    }
+    .onlineSection{
+        display: none;
     }
   }
