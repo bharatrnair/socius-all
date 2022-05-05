@@ -10,11 +10,45 @@
     background-color: #E1D5D5;
     height: 100%;
   }
+
   .save-mainBody{
     height: 100%;
-    padding: 60px;
+    padding: 31px;
+    display: grid;
+    grid-template-rows: .3fr 2fr;
+    gap: 10px;
   }
+
   .save-heading{
     display: flex;
     gap: 20px;
+  }
+
+.save-heading img{
+  height: 40px;
+  width: 40px;
+}
+
+  .savePost-body{
+    display: grid;
+    grid-template-rows:1fr 1fr ;
+    gap: 35px;
+    padding: 20px;
+  }
+
+  .saveUpper-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .saveLower-part{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .postImage{
+    background-color: rgb(130, 122, 138);
+    height: 200px;
   }

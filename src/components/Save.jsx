@@ -1,6 +1,6 @@
 import React from 'react'
 import VectorSave from './../components/Assets/Vectorsave.svg'
-
+import "./Save.css"
 const Save = () => {
   return (
     <div className="save-mainContainer">
@@ -9,8 +9,18 @@ const Save = () => {
                 <h2>saved</h2>
                 <img src={VectorSave} alt="" />
             </div>
-            <div className="savepost-body">
-                
+            
+            <div className="savePost-body">
+              <div className="saveUpper-part">
+                  <div className="postImage"></div>
+                  <div className="postImage"></div>
+                  <div className="postImage"></div>
+              </div>
+              <div className="saveLower-part">
+                  <div className="postImage"></div>
+                  <div className="postImage"></div>
+                  <div className="postImage"></div>
+              </div>
             </div>
 
         </div>
