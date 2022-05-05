@@ -178,6 +178,10 @@ html,body,#root{
   text-align: center;
   outline: none;
 }
+
+.underline:focus{
+  border-bottom: solid 2px #f45757;
+}
 #otp{
   text-align: center;
   color: #000000;
