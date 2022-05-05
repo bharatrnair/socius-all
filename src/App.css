@@ -118,11 +118,21 @@ html,body,#root{
     gap: 10px;
     
 }
+#firstName,#lastName{
+  padding: 20px;
+  background-color: #F9FFFF;
+  border-radius: 7px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 300px;
+  height: 30px;
+  font-size: 16px;
+  border: solid 2px #000000;
+}
 
 .formField{
   display: grid;
   grid-template-columns: 120px 1fr;
-  gap: 10px;
+  gap: 110px;
 }
 .formField input{
   background-color: #ffff;
