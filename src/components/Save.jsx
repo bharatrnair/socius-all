@@ -9,18 +9,14 @@ const Save = () => {
                 <h2>saved</h2>
                 <img src={VectorSave} alt="" />
             </div>
-            
+
             <div className="savePost-body">
-              <div className="saveUpper-part">
                   <div className="postImage"></div>
                   <div className="postImage"></div>
                   <div className="postImage"></div>
-              </div>
-              <div className="saveLower-part">
                   <div className="postImage"></div>
                   <div className="postImage"></div>
                   <div className="postImage"></div>
-              </div>
             </div>
 
         </div>
