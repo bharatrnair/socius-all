@@ -13,19 +13,18 @@
   .loginContainer{
     background-color: #E1D5D5;
     padding-right: 10px;
-    /* margin: auto; */
+    display: grid;
   }
   .signUpContainer{
     background-color: #F9FFFF;
   }
   .loginSection{
     margin: auto;
-    max-width: 55%;
-    /* max-height: 50%; */
     display: grid;
     gap: 20px;
-    margin-top: 40%;
-    padding-left: 20px; 
+    padding: 20px; 
+    align-items: center;
+    justify-items: center;
   }
   #username,#password{
     padding: 20px;
