@@ -65,6 +65,7 @@ const Home = () => {
               
                 </div>
                 <div className="homeFeed">
+                    <div className="postField">
                     <div className="photoSection">
                         <div className="postHeader">
                             <div className="userDp"></div>
@@ -93,6 +94,7 @@ const Home = () => {
                             </div>
                             <div className="postCaption"></div>
                         </div>
+                    </div>
                     </div>
                     <div className="sectionDivider"></div>
                     <div className="onlineSection">
