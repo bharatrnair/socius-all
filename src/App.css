@@ -402,7 +402,7 @@ h1{
 }
 .settings-property{
   background-color: #E3BFBF;
-  width: 1188px;
+  /* width: 1188px; */
   height: 85px;
   border-radius: 30px;
   padding: 30px;
