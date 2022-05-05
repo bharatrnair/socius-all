@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,body,#root{
+    height: 100%;
+  }
+  .mainContainer{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .otpSection{
+  background-color: #E1D5D5;
+}
+.vectorSection{
+  background-color: #ffff;
+}
+.otpDetailsSection {
+    margin: auto; 
+    max-width: 50%;
+    display: grid;
+    gap: 15px;
+    margin-top: 40%;
+    padding-left: 25px;
+}
+.otpInput{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: #fff;
+  gap: 10px;
+
+}
+.underline{
+  background-color: #E1D5D5;
+  border: none;
+  width: 50px;
+  border-bottom: solid 2px #000000;
+  text-align: center;
+  outline: none;
+}
+
+.underline:focus{
+  border-bottom: solid 2px #f45757;
+}
+#otp{
+  text-align: center;
+  color: #000000;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.messageSection{
+  color: #000000;
+  margin-left: auto;
+  margin-right: 0px;
+}
+.nextButton img{
+  width: 55px;
+}
+.nextButton{
+  margin: auto;
+}
+.vectorImage img{
+  display: grid;
+  padding-left: 75px;
+}
+.vectorSection{
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 32px;
+}
+#three{
+  color: black;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+    .mainContainer{
+        grid-template-rows: 2fr 1fr;
+    }
+}

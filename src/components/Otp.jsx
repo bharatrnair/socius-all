@@ -2,6 +2,7 @@ import { useState } from 'react';
 import next from './../components/Assets/next.svg'
 import vector from './../components/Assets/otpvector.png'
 import OtpField from './Common/OtpField'
+import './Otp.css'
 
 
 const Otp = () => {
