@@ -1,6 +1,7 @@
 import React from 'react'
 import back from './../components/Assets/back.svg'
 import cam from './../components/Assets/cam.svg'
+import "./Chat.css"
 
 const Chat = () => {
   return (

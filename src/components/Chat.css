@@ -1,0 +1,53 @@
+
+
+.mainChat{
+    background-color: #E1D5D5;
+    height: 100%;
+    /* width: 500px; */
+  }
+  .backButton{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  .chatHeader{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .searchText{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-left: 120px;
+  }
+  #inp{
+    background-color: #ffff;
+    border-radius: 7px;
+    height: 40px;
+    width: 700px;
+    padding-left: 10px;
+  }
+  .userDp{
+    background-color: #fbfcfe;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .userName{
+    color: #000000;
+    font-size: 20px;
+  }
+  .chats{
+    display: grid;
+    grid-template-columns: 220px 1fr 100px;
+    gap: 10px;
+    height: 100%;
+    overflow: auto;
+    padding-left: 70px;
+  }
+  .chatBody{
+    display: grid;
+    gap:55px;
+  }
