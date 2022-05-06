@@ -18,13 +18,13 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    /* margin: auto; */
+    margin: auto; 
     /* margin-top: 65px; */
     
   }
   .profileSection{
     display: grid;
-    place-items: center;
+    /* place-items: center; */
     align-content: center;
     /* padding-bottom: 350px;  */
     gap: 40px;
@@ -75,12 +75,15 @@
     background-color: #545558;
     height: 160px;
     width: 170px;
-    
+
   }
   .image3{
     background-color: #707172;
     height: 130px;
     width: 160px;
+  }
+  .profileSection-header{
+    position: relative;
   }
   @media screen and (max-width: 560px) {
     .postSection{
