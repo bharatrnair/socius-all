@@ -402,37 +402,5 @@ h1{
   display: grid;
   gap: 20px;
 }
-.storyView-mainContainer{
-  background-color: #E1D5D5;
-  height: 100%;
-}
-.story-mainBody{
-  height: 100%;
-  padding: 60px;
-}
-.storyView-Header{
-  display: flex;
-  gap: 1000px;
-  padding-bottom: 15px;
-}
-.viewHeader-First{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.storyView-dp{
-  background-color: #ffff;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-}
-.storyView-user{
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.storyView-body{
-  display: grid;
-  gap: 20px;
-}
+
 
