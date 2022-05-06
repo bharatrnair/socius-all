@@ -1,5 +1,6 @@
 import React from 'react'
 import send from './../components/Assets/send.svg'
+import './Personalchat.css'
 
 const PersonalChat = () => {
   return (
