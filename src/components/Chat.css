@@ -16,6 +16,10 @@
     gap: 10px;
   }
 
+  .chatHeader img{
+    display: grid;
+  }
+
   .searchText{
     display: grid;
     /* justify-content: center; */
@@ -28,13 +32,13 @@
     background-color: #ffff;
     border-radius: 7px;
     height: 40px;
-    width: 700px;
+    /* width: 700px; */
     padding-left: 10px;
   }
   .userDp{
     background-color: #fbfcfe;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     margin-left: 10px;
   }
