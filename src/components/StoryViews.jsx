@@ -1,6 +1,7 @@
 import React from 'react'
 import view from './../components/Assets/Vectoreyeview.svg'
 import Bin from './../components/Assets/Vectorbin.svg'
+import './StoryViews.css'
 
 const StoryViews = () => {
   return (
