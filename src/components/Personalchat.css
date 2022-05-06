@@ -39,6 +39,7 @@
     border-radius: 40px;
     margin:0;
     margin-right: auto;
+    position: relative;
   }
   .personal-chat-receiver{
     background-color: #E3BDBD;
@@ -47,17 +48,17 @@
     border-radius: 40px;
     margin: 0;
     margin-left: auto;
+    position: relative;
   }
   .senderTime{
     position: absolute;
-    left: 198px;
-    bottom: 520px
-  }
-  
+    bottom: 20px;
+    right: 20px;
+    } 
   .receiverTime{
-      position: absolute;
-      right: 59px;
-      bottom: 430px;
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
   }
   .Personal-chat-section{
     overflow:auto;
