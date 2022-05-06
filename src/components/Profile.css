@@ -81,3 +81,10 @@
     height: 130px;
     width: 160px;
   }
+  @media screen and (max-width: 560px) {
+    .postSection{
+      grid-template-rows: auto;
+      grid-template-columns: unset;
+    }
+
+    }
