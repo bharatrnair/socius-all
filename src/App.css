@@ -214,6 +214,7 @@ h1{
   border-radius: 40px;
   margin:0;
   margin-right: auto;
+  position: relative;
 }
 .personal-chat-receiver{
   background-color: #E3BDBD;
@@ -222,17 +223,18 @@ h1{
   border-radius: 40px;
   margin: 0;
   margin-left: auto;
+  position: relative;
 }
 .senderTime{
   position: absolute;
-  left: 198px;
-  bottom: 520px
+  right: 20px;
+  bottom: 20px;
 }
 
 .receiverTime{
-    position: absolute;
-    right: 59px;
-    bottom: 430px;
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
 }
 .Personal-chat-section{
   overflow:auto;
