@@ -182,78 +182,7 @@ h1{
   border-radius: 50%;
 }
 
-.Personal-chat-main{
-  background-color: #E1D5D5;
-  height: 100%;
-}
-.Personal-chat-dp{
-  background-color: #ffff;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-}
-.Personal-chat-header{
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 20px;
-  align-items: center;
-}
-.Personal-chat-body{
-  padding: 35px;
-  display: grid;
-  gap: 30px;
-  height: 100%;
-}
-.Personal-chat-date{
-  text-align: center;
-}
-.Personal-chat-sender{
-  background-color: #C97D7D;
-  width: 227px;
-  height: 90px;
-  border-radius: 40px;
-  margin:0;
-  margin-right: auto;
-}
-.personal-chat-receiver{
-  background-color: #E3BDBD;
-  width: 520px;
-  height: 92px;
-  border-radius: 40px;
-  margin: 0;
-  margin-left: auto;
-}
-.senderTime{
-  position: absolute;
-  left: 198px;
-  bottom: 520px
-}
 
-.receiverTime{
-    position: absolute;
-    right: 59px;
-    bottom: 430px;
-}
-.Personal-chat-section{
-  overflow:auto;
-  display: grid;
-  grid-template-rows: 4fr .5fr;
-}
-.Personal-chat-footer{
-    background-color: #F5BAB8;
-    /* width: 1450px; */
-    height: 105px;
-    border-radius: 40px;
-    display: grid;
-    align-items: center;
-    padding: 20px;
-    position: relative;
-}
-#sendButton{
-  position: absolute;
-  right: 70px;        /* ask about position: relative; */
-  bottom: 20px;
-}
 .notification-MainContainer{
   background-color: #E1D5D5;
   height: 100%;
