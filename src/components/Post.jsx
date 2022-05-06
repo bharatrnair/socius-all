@@ -9,12 +9,15 @@ const Post = () => {
     <div className="post-mainContainer">
         <div className="postMain-body">
             <div className="post-header">
+              
                 <div className="post-back">
                   <img src={Back} alt="" />
                 </div>
+
                 <div className="post-heading">
                     <h2>New post</h2>
                 </div>
+
             </div>
             <div className="postBody-section">
                 <div className="postPhoto-selection">
@@ -23,10 +26,10 @@ const Post = () => {
                 <div className="post-button">
                     <img src={PostButton} alt="" />
                 </div>
-                </div>
+            </div>
             
             <div className="postingCaption">
-                   <p>write something....</p>
+                    <p>write something....</p>
             </div>
             <div className="postFrom-section">
                 <div className="postFrom-gallery">
