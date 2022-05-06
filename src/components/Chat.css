@@ -5,22 +5,25 @@
     height: 100%;
     /* width: 500px; */
   }
+  
   .backButton{
-    position: absolute;
-    top: 8px;
-    left: 16px;
+    padding: 5px 3px 5px 15px;
   }
+
   .chatHeader{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 6fr;
     gap: 10px;
   }
+
   .searchText{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    /* justify-content: center; */
     padding-top: 12px;
     padding-left: 120px;
+    padding: 12px 30px 10px 0px;
   }
+
   #inp{
     background-color: #ffff;
     border-radius: 7px;
@@ -41,11 +44,11 @@
   }
   .chats{
     display: grid;
-    grid-template-columns: 220px 1fr 100px;
+    grid-template-columns: 1fr 4fr 1fr;
     gap: 10px;
     height: 100%;
     overflow: auto;
-    padding-left: 70px;
+    padding: 0px 0px 0px 70px;
   }
   .chatBody{
     display: grid;
