@@ -28,13 +28,14 @@
     align-content: center;
     /* padding-bottom: 350px;  */
     gap: 40px;
-    
+    padding: 0px 20px;
   }
   .profileFooter{
     background-color: #E1D5D5;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
+    padding: 0px 20px ;
   }
   .footerImage{
     padding: 5px;
@@ -62,7 +63,8 @@
   .postSection{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 150px;
+    gap: 30px;
+    
   }
   .image1{
     background-color: #4a4b4d;
