@@ -17,6 +17,7 @@
     display: grid;
     grid-template-rows: .3fr 2fr;
     gap: 10px;
+    
   }
 
   .save-heading{
