@@ -36,8 +36,9 @@
     gap : 20px;
   }
   .newComment{
-    width: 1216px;
-    height:165px;
+    /* width: 1216px;
+    height:165px; */
+    width: 100%;
     border-radius: 30px;
     background-color: #e2aaa8;
     display: grid;
