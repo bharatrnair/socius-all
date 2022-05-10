@@ -6,7 +6,7 @@ const Save = () => {
     <div className="save-mainContainer">
         <div className="save-mainBody">
             <div className="save-heading">
-                <h2>saved</h2>
+                <p id='saveFont'>saved</p>
                 <img src={VectorSave} alt="" />
             </div>
 
