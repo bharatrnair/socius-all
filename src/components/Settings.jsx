@@ -16,10 +16,10 @@ const Settings = () => {
                       <h3>Privacy & Security</h3>
                       </div>
                       <div className="settings-property">
-                      <h3>Blocked Accounts</h3>
+                      <h3>Privacy Policy</h3>
                       </div>
                       <div className="settings-property">
-                      <h3>Privacy Policy & Community Guidelines</h3>
+                      <h3>Community Guidelines</h3>
                       </div>
                       <div className="settings-property">
                       <h3>Log Out</h3>
