@@ -5,7 +5,7 @@
   }
   .notification-Body{
     height: 100%;
-    padding: 60px;                      /* display grid not working */
+    padding: 30px;                      /* display grid not working */
   }
   #notificationHeader{
     font-size: 30px;
@@ -18,8 +18,8 @@
     border-radius: 30px;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    padding: 15px;
-    gap: 120px;
+    padding: 9px;
+    gap: 20px;
   }
   .notifications{
     display: grid;
@@ -34,5 +34,7 @@
   .notification-read{
     display: grid;
     grid-template-columns: auto 1fr auto;
-    gap: 150px;
+    gap: 18px;
   }
+ 
+  
