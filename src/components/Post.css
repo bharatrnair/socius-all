@@ -1,6 +1,6 @@
 .post-mainContainer{
     background-color: #E1D5D5;
-    height: 100%;
+    min-height: 100%;
   }
   .postMain-body{
     height: 100%;
