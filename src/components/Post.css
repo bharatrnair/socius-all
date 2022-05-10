@@ -18,6 +18,7 @@
   .postPhoto-selection{
     height: 250px;
     width:100%;
+    max-width: 500px;
     background-color: #ffff;
   }
   .postingCaption{
