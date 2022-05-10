@@ -67,4 +67,6 @@
   }
   .post-footer{
     padding: 20px;
+    display: grid;
+    gap: 20px;
   }
