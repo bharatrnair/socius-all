@@ -1,6 +1,7 @@
 .post-mainContainer{
     background-color: #E1D5D5;
-    height: 100%;
+    min-height: 100%;
+    padding: 15px;
   }
   .postMain-body{
     height: 100%;
@@ -26,10 +27,9 @@
     background-color: #CAB0B0;
     border-radius: 30px;
     padding: 20px;
-    margin-left: 70px;
+    max-width: 500px;
   }
   .postFrom-section{
-    margin-left: 70px;
     font-size: large;
     display: grid;
     gap: 25px;
@@ -63,4 +63,9 @@
   }
   .post-button img{
     width: 100%;
+  }
+  .post-footer{
+    padding: 20px;
+    display: grid;
+    gap: 20px;
   }
