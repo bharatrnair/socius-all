@@ -15,8 +15,9 @@
   }
   .comment{
     background-color: #C97D7D;
-    height: 107px;
-    width: 1216px;
+    width: 100%;
+    /* height: 107px;
+    width: 1216px; */
     border-radius: 30px;
     padding: 20px;
     display: grid;
@@ -47,6 +48,6 @@
   .newComment-dp{
     background-color: #ffff;
     height: 50px;
-    width: 50px;
+    width: 100%;
     border-radius: 50%;
   }
