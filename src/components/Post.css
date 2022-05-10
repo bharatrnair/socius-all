@@ -17,10 +17,10 @@
     align-items: center;
   }
   .postPhoto-selection{
-    height: 250px;
     width:100%;
     max-width: 500px;
     background-color: #ffff;
+    aspect-ratio: 2;
   }
   .postingCaption{
     height: 100px;
