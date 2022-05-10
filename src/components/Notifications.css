@@ -20,6 +20,7 @@
     grid-template-columns: auto 1fr auto;
     padding: 9px;
     gap: 20px;
+    align-items: center;
   }
   .notifications{
     display: grid;
