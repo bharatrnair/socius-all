@@ -36,6 +36,7 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 18px;
+    align-items: center;
   }
  
   
