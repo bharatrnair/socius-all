@@ -1,4 +1,5 @@
 import React from 'react'
+import './Notifications.css'
 
 const Notifications = () => {
   return (
@@ -13,7 +14,7 @@ const Notifications = () => {
 
                          </div>
                          <div className="notification-details">
-                           <p>user like your photo</p>
+                           <p>user liked your photo</p>
                          </div>
                          <div className="notification-time">
                           <p>1 hr </p>
@@ -25,7 +26,7 @@ const Notifications = () => {
 
                            </div>
                          <div className="notification-details">
-                           <p>user like your photo</p>
+                           <p>user liked your photo</p>
                          </div>
                          <div className="notification-time">
                           <p>1 hr </p>
@@ -36,7 +37,7 @@ const Notifications = () => {
                                
                                </div>
                              <div className="notification-details">
-                               <p>user like your photo</p>
+                               <p>user liked your photo</p>
                              </div>
                              <div className="notification-time">
                               <p>1 hr </p>
@@ -47,7 +48,7 @@ const Notifications = () => {
                                
                                </div>
                              <div className="notification-details">
-                               <p>user like your photo</p>
+                               <p>user liked your photo</p>
                              </div>
                              <div className="notification-time">
                               <p>1 hr </p>
@@ -58,7 +59,7 @@ const Notifications = () => {
                                
                                </div>
                              <div className="notification-details">
-                               <p>user like your photo</p>
+                               <p>user liked your photo</p>
                              </div>
                              <div className="notification-time">
                               <p>1 hr </p>

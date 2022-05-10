@@ -1,0 +1,25 @@
+.settings-mainContainer{
+    background-color: #E1D5D5;
+    height: 100%;
+  }
+  .settings-MainBody{
+    height: 100%;
+    padding: 60px;
+  }
+  #settingHeader{
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .settings-property{
+    background-color: #E3BFBF;
+    /* width: 1188px; */
+    height: 85px;
+    border-radius: 30px;
+    padding: 30px;
+  
+  }
+  .settings-section{
+    display:grid;
+    gap: 20px;
+  
+  }

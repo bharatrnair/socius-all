@@ -1,0 +1,38 @@
+.notification-MainContainer{
+    background-color: #E1D5D5;
+    height: 100%;
+    /* padding: 60px ; */
+  }
+  .notification-Body{
+    height: 100%;
+    padding: 60px;                      /* display grid not working */
+  }
+  #notificationHeader{
+    font-size: 30px;
+    padding-bottom: 10px;
+  
+  }
+  .notification-Unread{
+    background-color: #E3BFBF;
+    height: 90px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 15px;
+    gap: 120px;
+  }
+  .notifications{
+    display: grid;
+    gap: 20px;
+  }
+  .notification-display-picture{
+    background-color: #ffff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .notification-read{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 150px;
+  }
