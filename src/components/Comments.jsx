@@ -2,6 +2,7 @@ import React from 'react'
 import comments from './../components/Assets/comments.svg'
 import like from './../components/Assets/Vectorlike.svg'
 import Send from './../components/Assets/Vectorsend.svg'
+import './Comments.css'
 
 const Comments = () => {
   return (

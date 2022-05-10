@@ -1,5 +1,6 @@
 import React from 'react'
 import like from './../components/Assets/Vectorlike.svg'
+import './Likes.css'
 
 const Likes = () => {
   return (
