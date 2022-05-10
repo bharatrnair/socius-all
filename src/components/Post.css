@@ -3,7 +3,6 @@
     height: 100%;
   }
   .postMain-body{
-    padding: 60px;
     height: 100%;
   }
   .post-header{
@@ -11,19 +10,18 @@
     gap: 50px;
   }
   .postBody-section{
-    padding: 70px;
+    padding: 20px;
     display: flex;
-    gap: 70px;
+    gap: 40px;
     align-items: center;
   }
   .postPhoto-selection{
     height: 250px;
-    width:380px;
+    width:100%;
     background-color: #ffff;
   }
   .postingCaption{
     height: 100px;
-    width: 400px;
     background-color: #CAB0B0;
     border-radius: 30px;
     padding: 20px;
@@ -31,7 +29,6 @@
   }
   .postFrom-section{
     margin-left: 70px;
-    padding-top: 20px;
     font-size: large;
     display: grid;
     gap: 25px;
@@ -62,4 +59,7 @@
   .postReaction-details{
     padding-left: 50px;
     font-weight: bold;
+  }
+  .post-button img{
+    width: 100%;
   }
