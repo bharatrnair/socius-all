@@ -27,7 +27,7 @@ const Post = () => {
                     <img src={PostButton} alt="" />
                 </div>
             </div>
-            
+            <div className="post-footer">
             <div className="postingCaption">
                     <p>write something....</p>
             </div>
@@ -41,6 +41,7 @@ const Post = () => {
                 <div className="goLive">
                   <p> Live -</p>
                 </div>
+            </div>
             </div>
             
 
