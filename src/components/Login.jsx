@@ -37,11 +37,11 @@ function Login() {
         </div>
         <div className="formField">
           <p>New-Password</p>
-        <input type="text" />
+        <input type="password" />
         </div>
         <div className="formField">
           <p>Confirm New-Password</p>
-        <input type="text" />
+        <input type="password" />
         </div>
         <div className="formField">
           <p>Date of Birth</p>
