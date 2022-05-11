@@ -36,6 +36,14 @@ function Login() {
         <input type="text" />
         </div>
         <div className="formField">
+          <p>New-Password</p>
+        <input type="text" />
+        </div>
+        <div className="formField">
+          <p>Confirm New-Password</p>
+        <input type="text" />
+        </div>
+        <div className="formField">
           <p>Date of Birth</p>
         <input type="date" />
         </div>
