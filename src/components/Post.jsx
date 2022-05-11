@@ -28,9 +28,7 @@ const Post = () => {
                 </div>
             </div>
             <div className="post-footer">
-            <div className="postingCaption">
-                    <p>write something....</p>
-            </div>
+           <input type="text" className='postingCaption'/>
             <div className="postFrom-section">
                 <div className="postFrom-gallery">
                   <p>Gallery - </p>
