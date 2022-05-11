@@ -28,7 +28,7 @@ const Post = () => {
                 </div>
             </div>
             <div className="post-footer">
-           <input type="text" className='postingCaption'/>
+           <input type="text" className='postingCaption' placeholder='write something..'/>
             <div className="postFrom-section">
                 <div className="postFrom-gallery">
                   <p>Gallery - </p>

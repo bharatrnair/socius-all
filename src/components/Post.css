@@ -24,6 +24,7 @@
   }
   .postingCaption{
     height: 100px;
+    border: none;
     background-color: #CAB0B0;
     border-radius: 30px;
     padding: 20px;
