@@ -18,9 +18,8 @@
     border-radius: 30px;
     display: grid;
     grid-template-columns: auto 1fr auto;
-    padding: 9px;
+    padding: 9bpx;
     gap: 20px;
-    align-items: center;
   }
   .notifications{
     display: grid;
@@ -36,7 +35,6 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 18px;
-    align-items: center;
   }
  
   
