@@ -36,11 +36,11 @@ function Login() {
         <input type="text" />
         </div>
         <div className="formField">
-          <p>New-Password</p>
+          <p>Create-Password</p>
         <input type="password" />
         </div>
         <div className="formField">
-          <p>Confirm New-Password</p>
+          <p>Confirm-Password</p>
         <input type="password" />
         </div>
         <div className="formField">
