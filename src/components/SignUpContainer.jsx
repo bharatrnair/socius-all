@@ -14,9 +14,9 @@ const SignUpContainer = () => {
     // }
 
     const [values, setValues] = useState({firstName: "", lastName: "",
-    Email:"",DateOfBirth:"",PhoneNumber:"",State:"",City:""})
+    Email:"",dob:"",phone:"",State:"",City:""})
     
-    const {firstName,lastName,Email,DateOfBirth,PhoneNumber,State,City} = values;
+    const {firstName,lastName,Email,dob,phone,State,City} = values;
 
     const onChange = (key,value)=>{
         setValues(prev =>({
@@ -32,7 +32,7 @@ const SignUpContainer = () => {
         headers:{
             "Content-Type":"application/json"
           },
-        body:JSON.stringify({...values,dob:DateOfBirth})
+        body:JSON.stringify({...values})
      }).then(res => res.json())
      .then((res)=>{
          console.log(res)
@@ -83,15 +83,15 @@ const SignUpContainer = () => {
     <div className="formField">
       <p>Date of Birth</p>
     <input type="date"
-     value={DateOfBirth} 
-     onChange={(e) => onChange("DateOfBirth",e.target.value)} /> 
+     value={dob} 
+     onChange={(e) => onChange("dob",e.target.value)} /> 
     </div>
 
     <div className="formField">
       <p>Phone Number</p>
     <input type="text"
-     value={PhoneNumber} 
-     onChange={(e) => onChange("PhoneNumber",e.target.value)} /> 
+     value={phone} 
+     onChange={(e) => onChange("phone",e.target.value)} /> 
     </div>
 
     <div className="formField">
