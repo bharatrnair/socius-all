@@ -1,9 +1,11 @@
 import React from 'react'
 import logo from './../components/Assets/logo.svg'
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 const LoginContainer = () => {
+  const navigate = useNavigate();
 
 const [values, setValues] = useState({Email: "", password: ""})
 
@@ -52,8 +54,13 @@ fetch("https://localhost:44371/api/login",{
          />
       
       <div className="loginButton">
-        <button id='login'>Log in</button>
+        <button 
+        onClick={()=> {
+         navigate("/home") 
+        }
+        } id='login' >Log in</button>
       </div>
+
         <p id='one'>"connect people around"</p>
         </div>
         </form>
