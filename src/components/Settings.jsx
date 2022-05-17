@@ -22,7 +22,7 @@ const Settings = () => {
                       <h3>Community Guidelines</h3>
                       </div>
                       <div className="settings-property">
-                      <h3>Log Out</h3>
+                      <button>Log Out</button>
                       </div>
               </div>
           </div>

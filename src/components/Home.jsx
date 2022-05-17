@@ -9,8 +9,23 @@ import like from './../components/Assets/like.svg'
 import dislike from './../components/Assets/dislike.svg'
 import comments from './../components/Assets/comments.svg'
 import "./home.css"
+import { useState, useEffect } from 'react'
 
 const Home = () => {
+
+    //const [values, setValues] = useState({FirstName: "",})
+
+    useEffect(()=>{
+ fetch("https://localhost:44371/api/users",{
+     credentials : 'include',
+ })
+ .then(res=> res.json())
+ .then((res)=>{
+  console.log(res)
+ })
+
+ },[])
+
   return (
     <div className="homeContainer">
         <div className="homeBody">
