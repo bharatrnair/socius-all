@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import postCall from '../Services/postCall';
 
 const SignUpContainer = () => {
 
@@ -27,13 +28,7 @@ const SignUpContainer = () => {
 
     const formSubmit = (e)=>{
         e.preventDefault();
-     fetch("https://localhost:44371/api/users",{
-        method:"POST",
-        headers:{
-            "Content-Type":"application/json"
-          },
-        body:JSON.stringify({...values})
-     }).then(res => res.json())
+    postCall("/users",values)
      .then((res)=>{
          console.log(res);
          setValues({firstName: "", lastName: "",
