@@ -18,6 +18,19 @@
     padding: 30px;
   
   }
+ #log-out{
+    background-color: #E3BFBF;
+    width: 150px;
+     height: 30px; 
+    border-radius: 30px;
+    padding: 30px;
+    /* margin: auto; */
+    align-items: center;
+  
+  }
+.settings-p{
+  margin: auto;
+}
   .settings-section{
     display:grid;
     gap: 20px;

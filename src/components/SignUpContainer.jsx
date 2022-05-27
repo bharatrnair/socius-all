@@ -14,9 +14,9 @@ const SignUpContainer = () => {
     // }
 
     const [values, setValues] = useState({firstName: "", lastName: "",
-    Email:"",dob:"",phone:"",State:"",City:""})
+    Email:"",dob:"",phone:"",State:"",City:"",Password:"", ConfirmPassword:""})
     
-    const {firstName,lastName,Email,dob,phone,State,City} = values;
+    const {firstName,lastName,Email,dob,phone,State,City,Password,ConfirmPassword} = values;
 
     const onChange = (key,value)=>{
         setValues(prev =>({
@@ -27,7 +27,7 @@ const SignUpContainer = () => {
 
     const formSubmit = (e)=>{
         e.preventDefault();
-     fetch("https://localhost:44371/api/users",{
+     fetch("https://localhost:44379/api/users",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -35,7 +35,10 @@ const SignUpContainer = () => {
         body:JSON.stringify({...values})
      }).then(res => res.json())
      .then((res)=>{
-         console.log(res)
+         console.log(res);
+         setValues({firstName: "", lastName: "",
+         Email:"",dob:"",phone:"",State:"",City:"",Password:"", ConfirmPassword:""});
+         alert("Registered Successfully")
      });
     }
 
@@ -45,7 +48,7 @@ const SignUpContainer = () => {
         <form onSubmit={formSubmit}>
     <div className="signUpSection">
     <p id='two'>Sign Up</p>
-    <div className="signUpInput">
+    <div className="signUpInput"> 
 
     <input type="text" placeholder='First Name' id='firstName' 
     value={firstName}
@@ -67,16 +70,16 @@ const SignUpContainer = () => {
     <div className="formField">
       <p>Create-Password</p>
     <input type="password"
-    //  value={Password} 
-    //  onChange={(e) => onchange("Password",e.target.value)}
+     value={Password} 
+     onChange={(e) => onChange("Password",e.target.value)}
       /> 
     </div>
 
     <div className="formField">
       <p>Confirm-Password</p>
     <input type="password" 
-    //  value={ConfirmPassword} 
-    //  onChange={(e) => onchange("ConfirmPassword",e.target.value)} 
+      value={ConfirmPassword} 
+      onChange={(e) => onChange("ConfirmPassword",e.target.value)} 
      />
     </div>
 

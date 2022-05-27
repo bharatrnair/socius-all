@@ -15,6 +15,9 @@ import StoryViews  from "./components/StoryViews.jsx";
 import Post from "./components/Post.jsx";
 import Save from "./components/Save.jsx"
 import Search from "./components/Search.jsx"
+import Test from "./components/test.jsx";
+import Tests from "./components/tests.jsx";
+
 
 
 const App = () => {
@@ -35,6 +38,8 @@ const App = () => {
             <Route path="post" element ={<Post />}></Route>
             <Route path="save" element ={<Save />}></Route>
             <Route path="search" element ={<Search />}></Route>
+            <Route path="test" element ={<Test/>}></Route>
+            <Route path="tests" element ={<Tests/>}></Route>
         </Routes>
         </BrowserRouter>
                );
