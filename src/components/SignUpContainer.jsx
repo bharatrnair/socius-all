@@ -14,15 +14,9 @@ const SignUpContainer = () => {
     // }
 
     const [values, setValues] = useState({firstName: "", lastName: "",
-<<<<<<< HEAD
-    Email:"",password:"",confirmpassword:"", DateOfBirth:"",PhoneNumber:"",State:"",City:""})
-    
-    const {firstName,lastName,Email,password,confirmpassword,DateOfBirth,PhoneNumber,State,City} = values;
-=======
     Email:"",password:"",Confirmpassword:"",dob:"",phone:"",State:"",City:""})
     
     const {firstName,lastName,Email,password,Confirmpassword,dob,phone,State,City} = values;
->>>>>>> 7a7c5465919c7d0f1f930f4363d9f38a72375b2e
 
     const onChange = (key,value)=>{
         setValues(prev =>({
@@ -38,11 +32,7 @@ const SignUpContainer = () => {
         headers:{
             "Content-Type":"application/json"
           },
-<<<<<<< HEAD
-        body:JSON.stringify({...values,Dob:DateOfBirth})
-=======
         body:JSON.stringify({...values})
->>>>>>> 7a7c5465919c7d0f1f930f4363d9f38a72375b2e
      }).then(res => res.json())
      .then((res)=>{
          console.log(res)
@@ -77,11 +67,7 @@ const SignUpContainer = () => {
     <div className="formField">
       <p>Create-Password</p>
     <input type="password"
-<<<<<<< HEAD
-      value={password} 
-=======
      value={password} 
->>>>>>> 7a7c5465919c7d0f1f930f4363d9f38a72375b2e
       onChange={(e) => onChange("password",e.target.value)}
       /> 
     </div>
@@ -89,13 +75,8 @@ const SignUpContainer = () => {
     <div className="formField">
       <p>Confirm-Password</p>
     <input type="password" 
-<<<<<<< HEAD
-      value={confirmpassword} 
-     onChange={(e) => onChange("confirmpassword",e.target.value)} 
-=======
       value={Confirmpassword} 
       onChange={(e) => onChange("Confirmpassword",e.target.value)} 
->>>>>>> 7a7c5465919c7d0f1f930f4363d9f38a72375b2e
      />
     </div>
 

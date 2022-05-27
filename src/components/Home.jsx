@@ -9,21 +9,6 @@ import like from './../components/Assets/like.svg'
 import dislike from './../components/Assets/dislike.svg'
 import comments from './../components/Assets/comments.svg'
 import "./home.css"
-<<<<<<< HEAD
-import { useEffect } from 'react'
-
-const Home = () => {
-    //const [values, setValues] = useState({Email:"",password:""})
-    useEffect(()=>{
-        fetch("https://localhost:44327/api/Usertbls",{
-            credentials:"include",
-    }).then(res => res.json())
-    .then((res)=>{
-        console.log(res);
-        // localStorage.setItem("userId", res.Id);
-    });
-    },[])
-=======
 import { useState, useEffect } from 'react'
 import getCall from '../Services/getCall'
 
@@ -57,7 +42,6 @@ const Home = () => {
     .then(res=> res.json())
     .then((res)=> console.log('success'))}
 
->>>>>>> 7a7c5465919c7d0f1f930f4363d9f38a72375b2e
   return (
     <div className="homeContainer">
         <div className="homeBody">
