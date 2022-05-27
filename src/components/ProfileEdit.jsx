@@ -1,7 +1,7 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
-const SignUpContainer = () => {
+const ProfileEdit = () => {
 
     // function _(id){
     //     return document.getElementById(id);
@@ -44,7 +44,7 @@ const SignUpContainer = () => {
     <div className= "signUpContainer">
         <form onSubmit={formSubmit}>
     <div className="signUpSection">
-    <p id='two'>Sign Up</p>
+    <p id='two'>Edit Profile</p>
     <div className="signUpInput">
 
     <input type="text" placeholder='First Name' id='firstName' 
@@ -58,14 +58,14 @@ const SignUpContainer = () => {
     </div>
 
     <div className="formField">
-      <p>E-mail</p>
+      <p>Change E-mail</p>
     <input type="text" 
     value={Email} 
     onChange={(e) => onChange("Email",e.target.value)} />
     </div>
 
     <div className="formField">
-      <p>Create-Password</p>
+      <p>Change-Password</p>
     <input type="password"
       value={password} 
       onChange={(e) => onChange("password",e.target.value)}
@@ -88,7 +88,7 @@ const SignUpContainer = () => {
     </div>
 
     <div className="formField">
-      <p>Phone Number</p>
+      <p>Change Phone Number</p>
     <input type="text"
      value={PhoneNumber} 
      onChange={(e) => onChange("PhoneNumber",e.target.value)} /> 
@@ -108,7 +108,7 @@ const SignUpContainer = () => {
      onChange={(e) => onChange("City",e.target.value)} /> 
     </div>
 
-    <button id='signUpButton'>Sign-up</button>
+    <button id='signUpButton'>Save Profile</button>
     </div>
     </form>
   </div>
@@ -117,4 +117,4 @@ const SignUpContainer = () => {
 
 }
 
-export default SignUpContainer
+export default ProfileEdit
