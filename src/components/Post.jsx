@@ -4,6 +4,8 @@ import PostButton from "./../components/Assets/post2.svg"
 import "./Post.css"
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import postCall from '../Services/postCall'
+
 
 
 
@@ -29,36 +31,25 @@ const Post = () => {
       text: textData
     };
 
-    fetch("https://localhost:44379/api/posts",
-    {
-      method:"POST",
-      headers:{
-        "Content-Type": 'application/json'
-      },
-       body: JSON.stringify(data),
-    }
-    ).then(res => res.json())
+    postCall("/posts",data)
     .then((res)=>{
         console.log(res)
      });
    }
 
- const postSubmit = () =>{
-   const formData = new FormData();
-   formData.append('File', selectedFile);
- fetch("https://localhost:44379/api/fileUpload",
- {
-    method:"POST",
-    body: formData,
-      }
- ).then(res => res.json())
- .then((res)=>{
-     console.log(res)
-     setImageUrl(res[0]);
- });
-}
 
-
+  
+  const postSubmit = () =>{
+    const formData = new FormData();
+    formData.append('File', selectedFile);
+    fileUploadCall("/fileUpload",formData)
+    .then((res)=>{
+      console.log(res)
+      setImageUrl(res[0]);
+    });
+  }
+  
+  
   
   return (
     <div className="post-mainContainer">
