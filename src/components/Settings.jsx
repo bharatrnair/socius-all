@@ -6,7 +6,7 @@ const Settings = () => {
     const navigate = useNavigate();
     const logOut= (e)=>{
         e.preventDefault();
-     fetch("https://localhost:44326/api/logout",{
+     fetch("https://localhost:44371/api/logout",{
         method:"POST",
         credentials:"include",
         headers:{
