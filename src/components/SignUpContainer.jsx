@@ -27,7 +27,7 @@ const SignUpContainer = () => {
 
     const formSubmit = (e)=>{
         e.preventDefault();
-     fetch("https://localhost:44379/api/users",{
+     fetch("https://localhost:44371/api/users",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -57,7 +57,7 @@ const SignUpContainer = () => {
 
     <input type="text" placeholder='Last Name' id='lastName'
     value={lastName} 
-    onChange={(e) => onChange("lastName",e.target.value)}/>
+    onChange={(e) => onChange("last Name",e.target.value)}/>
     </div>
 
     <div className="formField">
