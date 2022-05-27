@@ -60,8 +60,9 @@ const LoginContainer = () => {
         onChange={(e) => onChange("password",e.target.value)}/> 
 
       <div className="loginButton">
-        <button id='login'>Log in</button>
+        <button id='login' >Log in</button>
       </div>
+
         <p id='one'>"connect people around"</p>
         </div>
         </form>

@@ -45,7 +45,7 @@ const SignUpContainer = () => {
   return (
 
     <div className= "signUpContainer">
-        <form onSubmit={formSubmit}>
+        <form className='formSection' onSubmit={formSubmit}>
     <div className="signUpSection">
     <p id='two'>Sign Up</p>
     <div className="signUpInput"> 

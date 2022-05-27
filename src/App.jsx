@@ -40,6 +40,11 @@ const App = () => {
             <Route path="search" element ={<Search />}></Route>
             <Route path="test" element ={<Test/>}></Route>
             <Route path="tests" element ={<Tests/>}></Route>
+            <Route path="test" element ={
+                <div>
+                    <input type="file" />
+                </div>
+            }></Route>
         </Routes>
         </BrowserRouter>
                );

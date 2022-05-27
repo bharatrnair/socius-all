@@ -9,73 +9,49 @@ import like from './../components/Assets/like.svg'
 import dislike from './../components/Assets/dislike.svg'
 import comments from './../components/Assets/comments.svg'
 import "./home.css"
+import { useState, useEffect } from 'react'
+import getCall from '../Services/getCall'
 
 const Home = () => {
 
-    useEffect(() => {
-        fetch("https://localhost:44379/api/users", 
-        {
-            credentials : 'include',
-
-        })
-        .then(res => res.json())
+    const [usersList, setusersList] = useState([]);
+    
+    useEffect(()=>{
+        getCall("/homefeed?page=1")
         .then((res)=>{
-            console.log(res)
+            console.log(res);
+            setusersList(res);
+        })
+
+    },[])
+
+//  const data = {}
+
+ function LikeApiCall(){
+    fetch("https://localhost:44371/api/like?page=3",{
+        method : "POST",
+        credentials : 'include',
+        headers:{
+            "Content-Type":"application/json"
+          },
+        body: JSON.stringify({
+            postId:""
+            
+        }),
     })
-},[])
+    .then(res=> res.json())
+    .then((res)=> console.log('success'))}
 
   return (
     <div className="homeContainer">
         <div className="homeBody">
             <div className="homeStory">
-                <div className="story">
+                {usersList.map((data,i)=>
+                <div className="story" key={i}>
                     <div className="storyIcon"></div>
-                    <div className="storyUser">your story</div>
+                    <div className="storyUser">{data.FirstName}</div>
                 </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 2</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 3</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 4</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 5</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 6</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 7</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 8</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 9</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 10</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 11</div>
-                </div>
-                <div className="story">
-                    <div className="storyIcon"></div>
-                    <div className="storyUser">user 12</div>
-                </div>
+                )}
               
                 </div>
                 <div className="homeFeed">
@@ -90,7 +66,7 @@ const Home = () => {
                         </div>
                         <div className="postFooter">
                             <div className="postReaction">
-                                <div className="postLike">
+                                <div className="postLike" onClick={LikeApiCall}>
                                     <img src={like} alt="" />
                                     <p id='reactionFont'>Like</p>
                                 </div>
