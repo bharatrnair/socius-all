@@ -13,10 +13,10 @@ const SignUpContainer = () => {
 
     // }
 
-    const [values, setValues] = useState({firstName: "", lasttName: "",
-    Email:"",DateOfBirth:"",PhoneNumber:"",password:"",confirmpassword:"",State:"",City:""})
+    const [values, setValues] = useState({firstName: "", lastName: "",
+    Email:"",password:"",Confirmpassword:"",dob:"",phone:"",State:"",City:""})
     
-    const {firstName,lasttName,Email,DateOfBirth,PhoneNumber,password,confirmpassword,State,City} = values;
+    const {firstName,lastName,Email,password,Confirmpassword,dob,phone,State,City} = values;
 
     const onChange = (key,value)=>{
         setValues(prev =>({
@@ -32,7 +32,7 @@ const SignUpContainer = () => {
         headers:{
             "Content-Type":"application/json"
           },
-        body:JSON.stringify({...values,DOB:DateOfBirth})
+        body:JSON.stringify({...values})
      }).then(res => res.json())
      .then((res)=>{
          console.log(res)
@@ -42,7 +42,7 @@ const SignUpContainer = () => {
   return (
 
     <div className= "signUpContainer">
-        <form onSubmit={formSubmit}>
+        <form className='formSection' onSubmit={formSubmit}>
     <div className="signUpSection">
     <p id='two'>Sign Up</p>
     <div className="signUpInput">
@@ -68,28 +68,30 @@ const SignUpContainer = () => {
       <p>Create-Password</p>
     <input type="password"
      value={password} 
-     onChange={(e) => onChange("password",e.target.value)}/> 
+      onChange={(e) => onChange("password",e.target.value)}
+      /> 
     </div>
 
     <div className="formField">
       <p>Confirm-Password</p>
     <input type="password" 
-     value={confirmpassword} 
-      onChange={(e) => onChange("confirmpassword",e.target.value)}/>
+      value={Confirmpassword} 
+      onChange={(e) => onChange("Confirmpassword",e.target.value)} 
+     />
     </div>
 
     <div className="formField">
       <p>Date of Birth</p>
     <input type="date"
-     value={DateOfBirth} 
-     onChange={(e) => onChange("DateOfBirth",e.target.value)} /> 
+     value={dob} 
+     onChange={(e) => onChange("dob",e.target.value)} /> 
     </div>
 
     <div className="formField">
       <p>Phone Number</p>
     <input type="text"
-     value={PhoneNumber} 
-     onChange={(e) => onChange("PhoneNumber",e.target.value)} /> 
+     value={phone} 
+     onChange={(e) => onChange("phone",e.target.value)} /> 
     </div>
 
     <div className="formField">
