@@ -27,12 +27,12 @@ const SignUpContainer = () => {
 
     const formSubmit = (e)=>{
         e.preventDefault();
-     fetch("https://localhost:44371/api/users",{
+     fetch("https://localhost:44347/api/Usertbls/",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
           },
-        body:JSON.stringify({...values,dob:DateOfBirth})
+        body:JSON.stringify({...values,DOB:DateOfBirth})
      }).then(res => res.json())
      .then((res)=>{
          console.log(res)
