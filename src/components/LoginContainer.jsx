@@ -45,6 +45,7 @@ const LoginContainer = () => {
           <div className="line"></div>
            <h1>socius</h1>
         </div>
+        
 
       
       <input type="text" 
@@ -60,12 +61,14 @@ const LoginContainer = () => {
         onChange={(e) => onChange("password",e.target.value)}/> 
 
       <div className="loginButton">
-        <button id='login' >Log in</button>
+        
+        <button id='login'>Log In</button>
       </div>
 
         <p id='one'>"connect people around"</p>
         </div>
-        </form>
+      </form>
+        
         </div>
   )
 }

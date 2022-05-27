@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,body,#root{
+    height: 100%;
+  }
+  .mainContainer{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-color: #E1D5D5;
+  }
+  /* .loginContainer{
+    background-color: #E1D5D5;
+    padding-right: 10px;
+    display: grid;
+  }
+  .signUpContainer{
+    background-color: #F9FFFF;
+  }
+  .loginSection{
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    padding: 20px; 
+    align-items: center;
+    justify-items: center;
+  }
+  #username,#password{
+    padding: 20px;
+    background-color: #F9FFFF;
+    border-radius: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+  }
+  #one{
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .loginButton{
+    text-align: center;
+    margin-top: 30px;
+    /* padding: 10px; */
+  /* } */
+  #login{
+    padding: 10px;
+    width: 100px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 10px;
+  }
+  #two{
+    color: black;
+    font-size: 36px;
+  } */
+  .signUpSection{
+    display: grid;
+    gap: 14px; 
+    max-width: 400px;
+    width: 100%;
+  }
+  .signUpContainer
+  {
+      display: grid;
+      place-items: center;
+      padding: 20px;
+  }
+  .signUpInput
+  {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      
+  }
+  #firstName,#lastName{
+    padding: 20px;
+    background-color: #F9FFFF;
+    border-radius: 7px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 30px;
+    font-size: 16px;
+    width: 100%;
+    border: solid 2px #000000;
+  }
+  
+  .formField{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+  }
+  .formField input{
+    background-color: #ffff;
+    border : solid 2px #000000;
+    border-radius: 7px;
+    height: 48px;
+  }
+  #signUpButton{
+    width: 85px;
+    padding: 6px;
+    border-radius: 7px;
+    background-color: #0E0D0D;
+    color: white;
+  
+  }
+  
+  
+  #signUpInput input{
+    background-color: #ffff;
+    border: solid 2px #000000;
+    border-radius: 7px;
+    height: 39px;
+  
+  }
+  
+  .logoSection img{
+    width: 65px;
+  }
+  .logoSection{
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    gap: 25px;
+  }
+  h1{
+    font-size: 50px;
+    color: #000000;
+  }
+  .line{
+    border-left: solid black;
+    height: 80px;
+  }  
