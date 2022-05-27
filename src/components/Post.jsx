@@ -5,9 +5,7 @@ import "./Post.css"
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import postCall from '../Services/postCall'
-
-
-
+import fileUploadCall from '../Services/fileUploadCall'
 
 
 const Post = () => {
@@ -21,7 +19,6 @@ const Post = () => {
       setSelectedFile(e.target.files[0])
       //setFile(URL.createObjectURL(e.target.files[0]));
   }
-
 
 
   const textSubmit = () =>{
@@ -48,7 +45,6 @@ const Post = () => {
       setImageUrl(res[0]);
     });
   }
-  
   
   
   return (
@@ -97,9 +93,7 @@ const Post = () => {
                 </div>
             </div> */}
             </div>
-            
-
-
+          
         </div>
 
     </div>
