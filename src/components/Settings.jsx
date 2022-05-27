@@ -1,7 +1,27 @@
 import React from 'react'
+import { Navigate } from 'react-router-dom';
 import './Settings.css'
+import { useNavigate } from 'react-router-dom'
 
 const Settings = () => {
+
+    const navigate =useNavigate();
+
+  const logOut =(e)=>{
+    e.preventDefault();
+    fetch("https://localhost:44371/api/logout", {
+        method:"POST",
+        credentials : 'include',
+        headers:{
+            "Content-Type":"application/json"
+          }
+      }).then(res => res.json())
+      .then((res)=>{
+          navigate("/")
+    })
+  }
+
+
   return (
       <div className="settings-mainContainer">
           <div className="settings-MainBody">
@@ -22,7 +42,9 @@ const Settings = () => {
                       <h3>Community Guidelines</h3>
                       </div>
                       <div className="settings-property">
-                      <button>Log Out</button>
+                      <button 
+                      onClick={logOut}
+                      id='log-out'>Log Out</button>
                       </div>
               </div>
           </div>
