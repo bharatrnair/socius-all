@@ -10,22 +10,20 @@ import dislike from './../components/Assets/dislike.svg'
 import comments from './../components/Assets/comments.svg'
 import "./home.css"
 import { useState, useEffect } from 'react'
+import getCall from '../Services/getCall'
 
 const Home = () => {
 
     const [usersList, setusersList] = useState([]);
     
     useEffect(()=>{
- fetch("https://localhost:44371/api/homefeed?page=3",{
-     method : "GET",
-     credentials : 'include',
- })
- .then(res=> res.json())
- .then((res)=>{
-    setusersList(res);
- })
+        getCall("/homefeed?page=1")
+        .then((res)=>{
+            console.log(res);
+            setusersList(res);
+        })
 
- },[])
+    },[])
 
 //  const data = {}
 
