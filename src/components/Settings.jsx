@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom'
 import './Settings.css'
 
 
-
 const Settings = () => {
     const navigate = useNavigate();
     const logOut = (e) => {
@@ -39,10 +38,10 @@ const Settings = () => {
                       <h3>Community Guidelines</h3>
                       </div>
                       <div className="settings-property">
-                          <button
+                          <button 
                           onClick={logOut}
-                          id='log-out'>Log Out</button>
-                      
+                          id="log-out" >Log Out</button>
+                     
                       </div>
               </div>
           </div>
