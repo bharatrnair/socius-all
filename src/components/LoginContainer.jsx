@@ -21,15 +21,8 @@ const LoginContainer = () => {
 
     const formSubmit = (e)=>{
       e.preventDefault();
-   fetch("https://localhost:44379/api/login",{
-      method:"POST",
-      credentials:'include',
-      headers:{
-          "Content-Type":"application/json"
-        },
-      body:JSON.stringify({...values})
-   }).then(res => res.json())
-   .then((res)=>{
+      postCall("/login",values)
+     .then((res)=>{
        if(res.status == true)
        navigate("/Home")
    });
