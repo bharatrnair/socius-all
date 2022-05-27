@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react'
 import home from  './../components/Assets/home.svg'
 import chat from './../components/Assets/chat.svg'
 import post from './../components/Assets/post.svg'
