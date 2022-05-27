@@ -28,7 +28,19 @@ const Post = () => {
       text: textData
     };
 
+<<<<<<< HEAD
     postCall("/posts",data)
+=======
+    fetch("https://localhost:44379/api/posts", //postcall("/posts")
+    {
+      method:"POST",
+      headers:{
+        "Content-Type": 'application/json'
+      },
+       body: JSON.stringify(data),
+    }
+    ).then(res => res.json())
+>>>>>>> 4b3050ae8d56f95c940da2b2d8424d2e8e896f4f
     .then((res)=>{
         console.log(res)
      });

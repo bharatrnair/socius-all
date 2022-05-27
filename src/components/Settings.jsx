@@ -1,18 +1,13 @@
 import { useNavigate } from 'react-router-dom'
 import './Settings.css'
+import postCall from '../Services/postCall';
 
 
 const Settings = () => {
     const navigate = useNavigate();
     const logOut= (e)=>{
         e.preventDefault();
-     fetch("https://localhost:44371/api/logout",{
-        method:"POST",
-        credentials:"include",
-        headers:{
-            "Content-Type":"application/json"
-          },
-     }).then(res => res.json())
+      postCall("/logout")
      .then((res)=>{
          navigate("/")
      });
