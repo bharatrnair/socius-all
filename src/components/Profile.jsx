@@ -9,18 +9,17 @@ import bell from './../components/Assets/bell.svg'
 import settings from './../components/Assets/settings.svg';
 import './Profile.css'
 import { useNavigate } from "react-router-dom";
+import fileUploadCall from '../Services/fileUploadCall';
+import getCall from '../Services/getCall';
 
 const Profile = () => {
   const [selectedFile, setSelectedFile] = useState();
-  const [curentUser,setCurentUser] = useState();
+  const [currentUser,setCurrentUser] = useState();
 
   useEffect(()=>{
-    fetch("https://localhost:44326/api/users",{
-            credentials : 'include',
-        })
-    .then(res => res.json())
+    getCall("/users")
     .then((res)=>{
-      setCurentUser(res)
+      setCurrentUser(res)
     })
   },[]);
 
@@ -33,18 +32,14 @@ const Profile = () => {
     const formData = new FormData();
 		formData.append('File', selectedFile);
 
-		fetch("https://localhost:44326//api/FileUpload",
-			{
-				method: "POST",
-				body: formData,
-			}
-		)
+		fileUploadCall("fileUpload", formData)
+		
 
-			.then((response) => response.json())
+  
 			.then((result) => {
 				console.log('Success:', result[0]);
         console.log({
-          ...curentUser,
+          ...currentUser,
           ImagePath: result[0]
         });
 			})
@@ -56,9 +51,9 @@ const Profile = () => {
   
   const [follow,setFollow]=useState(true);
 
-  function Following(){
-    setFollow(false);
-  }
+  // function Following(){
+    // setFollow(false);
+  // }
   const navigate = useNavigate();
   return (
    <div className="mainSection">
