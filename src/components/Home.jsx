@@ -10,6 +10,7 @@ import comments from './../components/Assets/comments.svg'
 import "./home.css"
 import { useState, useEffect } from 'react'
 import getCall from '../Services/getCall'
+import postCall from '../Services/postCall'
 
 const Home = () => {
 
@@ -27,18 +28,7 @@ const Home = () => {
 //  const data = {}
 
  function LikeApiCall(){
-    fetch("https://localhost:44371/api/like?page=3",{
-        method : "POST",
-        credentials : 'include',
-        headers:{
-            "Content-Type":"application/json"
-          },
-        body: JSON.stringify({
-            postId:""
-            
-        }),
-    })
-    .then(res=> res.json())
+     postCall("/like?page=3","")
     .then((res)=> console.log('success'))}
 
   return (

@@ -27,7 +27,7 @@ const SignUpContainer = () => {
 
     const formSubmit = (e)=>{
         e.preventDefault();
-     fetch("https://localhost:44379/api/users",{
+     fetch("https://localhost:44371/api/users",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"

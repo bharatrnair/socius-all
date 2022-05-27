@@ -29,7 +29,7 @@ const Post = () => {
       text: textData
     };
 
-    fetch("https://localhost:44379/api/posts",
+    fetch("https://localhost:44379/api/posts", //postcall("/posts")
     {
       method:"POST",
       headers:{
