@@ -36,6 +36,11 @@ const App = () => {
             <Route path="save" element ={<Save />}></Route>
             <Route path="search" element ={<Search />}></Route>
             <Route path="imageUpload" element ={<ImageUpload />}></Route>
+            <Route path="test" element ={
+                <div>
+                    <input type="file" />
+                </div>
+            }></Route>
         </Routes>
         </BrowserRouter>
                );

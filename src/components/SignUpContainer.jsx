@@ -14,9 +14,9 @@ const SignUpContainer = () => {
     // }
 
     const [values, setValues] = useState({firstName: "", lastName: "",
-    Email:"",dob:"",phone:"",State:"",City:"",Password:"",ConfirmPassword:""})
+    Email:"",password:"",Confirmpassword:"",dob:"",phone:"",State:"",City:""})
     
-    const {firstName,lastName,Email,dob,phone,State,City,Password,ConfirmPassword} = values;
+    const {firstName,lastName,Email,password,Confirmpassword,dob,phone,State,City} = values;
 
     const onChange = (key,value)=>{
         setValues(prev =>({
@@ -42,7 +42,7 @@ const SignUpContainer = () => {
   return (
 
     <div className= "signUpContainer">
-        <form onSubmit={formSubmit}>
+        <form className='formSection' onSubmit={formSubmit}>
     <div className="signUpSection">
     <p id='two'>Sign Up</p>
     <div className="signUpInput">
@@ -67,16 +67,16 @@ const SignUpContainer = () => {
     <div className="formField">
       <p>Create-Password</p>
     <input type="password"
-    value={Password} 
-     onChange={(e) => onChange("Password",e.target.value)}
+     value={password} 
+      onChange={(e) => onChange("password",e.target.value)}
       /> 
     </div>
 
     <div className="formField">
       <p>Confirm-Password</p>
     <input type="password" 
-    value={ConfirmPassword} 
-    onChange={(e) => onChange("ConfirmPassword",e.target.value)} 
+      value={Confirmpassword} 
+      onChange={(e) => onChange("Confirmpassword",e.target.value)} 
      />
     </div>
 

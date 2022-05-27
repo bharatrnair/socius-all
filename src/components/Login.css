@@ -135,3 +135,6 @@
     border-left: solid black;
     height: 80px;
   }  
+  .formSection{
+    display: grid;
+  }
