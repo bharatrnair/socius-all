@@ -16,8 +16,9 @@
     /* height: 85px; */
     border-radius: 30px;
     padding: 30px;
-  
+    cursor: pointer;
   }
+
   .settings-section{
     display:grid;
     gap: 20px;
@@ -26,6 +27,23 @@
   h3{
     font-size: 18px;
     text-align: center;
+  }
+
+  #log-out{
     
+    border: solid #b19595 1px;
+    background-color: #caa5a5;
+    display: grid;
+    margin: auto;
+    border-radius: 8px 8px 8px 8px;
+    cursor: pointer;
+    /* border-radius: 30px; */
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
     
+  }
+
+  #button-style{
+    cursor: pointer;
   }

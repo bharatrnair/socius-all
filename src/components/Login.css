@@ -14,6 +14,7 @@
     background-color: #E1D5D5;
     padding-right: 10px;
     display: grid;
+    align-content: space-around;
   }
   .signUpContainer{
     background-color: #F9FFFF;

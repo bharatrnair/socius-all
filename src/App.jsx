@@ -15,7 +15,7 @@ import StoryViews  from "./components/StoryViews.jsx";
 import Post from "./components/Post.jsx";
 import Save from "./components/Save.jsx"
 import Search from "./components/Search.jsx"
-
+import ImageUpload from "./components/ImageUpload.jsx";
 
 const App = () => {
     return (
@@ -35,6 +35,7 @@ const App = () => {
             <Route path="post" element ={<Post />}></Route>
             <Route path="save" element ={<Save />}></Route>
             <Route path="search" element ={<Search />}></Route>
+            <Route path="imageUpload" element ={<ImageUpload />}></Route>
         </Routes>
         </BrowserRouter>
                );

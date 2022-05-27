@@ -13,15 +13,7 @@
     height: 100%;
     grid-template-rows: 4fr .5fr ;
   }
-  .displayPicture{
-    background-color: grey;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: auto; 
-    /* margin-top: 65px; */
-    
-  }
+  
   .profileSection{
     display: grid;
     /* place-items: center; */
@@ -90,6 +82,49 @@
   .profileSection-header{
     position: relative;
   }
+
+  #forDp{
+    background-color: white;
+    margin: 30px 0px 0px 30px;
+    cursor: pointer;
+  }
+
+  .displayPicture{
+    /* background-color: grey;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;  */
+    /* margin-top: 65px; */
+    
+  }
+
+  .displayPicture input,button{
+    margin: auto;
+  }
+
+  .displayPicture img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+
+  .avatar{
+    /* background-color: grey; */
+    /* border: solid grey 3px; */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+  }
+
+
+  /* #for-avatar label{
+    margin:auto;
+    border: solid rgb(226, 194, 194) 1px;
+    padding: 0px 0px 0px 50px ; 
+  } */
+
   @media screen and (max-width: 960px) {
     .postSection{
       grid-template-rows: auto;

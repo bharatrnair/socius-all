@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import home from  './../components/Assets/home.svg'
 import chat from './../components/Assets/chat.svg'
 import post from './../components/Assets/post.svg'
@@ -9,8 +9,19 @@ import like from './../components/Assets/like.svg'
 import dislike from './../components/Assets/dislike.svg'
 import comments from './../components/Assets/comments.svg'
 import "./home.css"
+import { useState } from 'react'
 
 const Home = () => {
+    useEffect(() => {
+        fetch("https://localhost:44326/api/users",{
+            credentials : 'include',
+        })
+.then(res => res.json())
+.then((res)=>{
+  console.log(res)
+})
+},[])
+
   return (
     <div className="homeContainer">
         <div className="homeBody">
