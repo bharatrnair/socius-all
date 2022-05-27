@@ -16,6 +16,9 @@
     display: grid;
     align-content: space-around;
   }
+form{
+  display: grid;
+}
   .signUpContainer{
     background-color: #F9FFFF;
   }
