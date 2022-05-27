@@ -42,9 +42,10 @@ const Settings = () => {
                       <h3>Community Guidelines</h3>
                       </div>
                       <div className="settings-property">
-                      <button 
-                      onClick={logOut}
-                      id='log-out'>Log Out</button>
+                          <button 
+                          onClick={logOut}
+                          id="log-out" >Log Out</button>
+                     
                       </div>
               </div>
           </div>
