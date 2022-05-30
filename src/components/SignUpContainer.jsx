@@ -52,7 +52,7 @@ const SignUpContainer = () => {
 
     <input type="text" placeholder='Last Name' id='lastName'
     value={lastName} 
-    onChange={(e) => onChange("last Name",e.target.value)}/>
+    onChange={(e) => onChange("lastName",e.target.value)}/>
     </div>
 
     <div className="formField">

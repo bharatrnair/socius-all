@@ -8,6 +8,7 @@ import like from './../components/Assets/like.svg'
 import dislike from './../components/Assets/dislike.svg'
 import comments from './../components/Assets/comments.svg'
 import "./home.css"
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import getCall from '../Services/getCall'
 import postCall from '../Services/postCall'
@@ -15,6 +16,7 @@ import postCall from '../Services/postCall'
 const Home = () => {
 
     const [usersList, setusersList] = useState([]);
+    const navigate = useNavigate();
     
     useEffect(()=>{
         getCall("/homefeed?page=1")
@@ -108,23 +110,23 @@ const Home = () => {
         </div>
         <div className="homeFooter">
         <div className="footerImage">
-       <img src={home} alt="" />
+       <img src={home} alt="" onClick={()=>navigate("/Home")}/>
        <p>home</p>
        </div>
        <div className="footerImage">
-         <img src={chat} alt="" />
+         <img src={chat} alt="" onClick={()=>navigate("/Chat")}/>
          <p>chats</p>
        </div>
        <div className="footerImage">
-         <img src={post} alt="" />
+         <img src={post} alt="" onClick={()=>navigate("/Post")}/>
          <p>post</p>
        </div>
        <div className="footerImage">
-         <img src={search} alt="" />
+         <img src={search} alt="" onClick={()=>navigate("/Search")}/>
          <p>search</p>
        </div>
        <div className="footerImage">
-         <img src={bell} alt="" />
+         <img src={bell} alt="" onClick={()=>navigate("/Notification")}/>
          <p>notifications</p>
        </div>
 

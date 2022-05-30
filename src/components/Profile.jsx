@@ -32,7 +32,7 @@ const Profile = () => {
     const formData = new FormData();
 		formData.append('File', selectedFile);
 
-		fileUploadCall("fileUpload", formData)
+		fileUploadCall("/fileUpload", formData)
 		
 
   
