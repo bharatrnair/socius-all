@@ -12,6 +12,8 @@ import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import getCall from '../Services/getCall'
 import postCall from '../Services/postCall'
+import serviceUrl from '../Config/serviceUrl'
+
 
 const Home = () => {
 
@@ -39,7 +41,9 @@ const Home = () => {
             <div className="homeStory">
                 {usersList.map((data,i)=>
                 <div className="story" key={i}>
-                    <div className="storyIcon"></div>
+                    <div className="storyIcon" style={{
+                        backgroundImage:`url(${serviceUrl +data.DpUrl})`
+                    }}></div>
                     <div className="storyUser">{data.FirstName}</div>
                 </div>
                 )}

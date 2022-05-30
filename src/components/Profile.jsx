@@ -11,13 +11,14 @@ import './Profile.css'
 import { useNavigate } from "react-router-dom";
 import fileUploadCall from '../Services/fileUploadCall';
 import getCall from '../Services/getCall';
+import postCall from '../Services/postCall';
 
 const Profile = () => {
   const [selectedFile, setSelectedFile] = useState();
   const [currentUser,setCurrentUser] = useState();
 
   useEffect(()=>{
-    getCall("/users")
+    getCall("/getusers")
     .then((res)=>{
       setCurrentUser(res)
     })
@@ -33,15 +34,11 @@ const Profile = () => {
 		formData.append('File', selectedFile);
 
 		fileUploadCall("/fileUpload", formData)
-		
-
-  
 			.then((result) => {
 				console.log('Success:', result[0]);
-        console.log({
-          ...currentUser,
-          ImagePath: result[0]
-        });
+        postCall("/dp",{Url:result[0]
+
+        })
 			})
 			.catch((error) => {
 				console.error('Error:', error);
