@@ -126,7 +126,7 @@ const Home = () => {
          <p>search</p>
        </div>
        <div className="footerImage">
-         <img src={bell} alt="" onClick={()=>navigate("/Notification")}/>
+         <img src={bell} alt="" onClick={()=>navigate("/Notifications")}/>
          <p>notifications</p>
        </div>
 
