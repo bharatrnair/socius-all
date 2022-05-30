@@ -42,7 +42,7 @@ const Home = () => {
                 {usersList.map((data,i)=>
                 <div className="story" key={i}>
                     <div className="storyIcon" style={{
-                        backgroundImage:`url(${serviceUrl +data.DpUrl})`
+                        backgroundImage:data.DpUrl && `url(${serviceUrl +data.DpUrl})`
                     }}></div>
                     <div className="storyUser">{data.FirstName}</div>
                 </div>
