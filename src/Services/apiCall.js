@@ -10,7 +10,7 @@ export default async (url, method, data, isFile = false) => {
           "Content-Type": "application/json",
         },
 
-    body: (isFile && data) || data ? JSON.stringify(data) : undefined,
+    body: isFile? data: data ? JSON.stringify(data) : undefined,
   });
   return response.json();
 };

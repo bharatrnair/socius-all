@@ -10,8 +10,7 @@ import fileUploadCall from '../Services/fileUploadCall'
 
 const Post = () => {
   const [selectedFile, setSelectedFile] = useState();
-  const [textData, setTextData] = useState();
-  const [imageUrl, setImageUrl] = useState("");
+  const [textData, setTextData] = useState("");
   const navigate= useNavigate();
   // const [file, setFile] = useState();
   function handleChange(e) {
@@ -21,11 +20,10 @@ const Post = () => {
   }
 
 
-  const textSubmit = () =>{
-    // const fileData = new FileData();
+  const textSubmit = (ImageUrl) =>{
     let data={
-      imageUrl: imageUrl,
-      text: textData
+      ImageUrl,
+      Caption : textData
     };
 
     postCall("/posts",data)
@@ -41,8 +39,8 @@ const Post = () => {
     formData.append('File', selectedFile);
     fileUploadCall("/fileUpload",formData)
     .then((res)=>{
-      console.log(res)
-      setImageUrl(res[0]);
+
+      textSubmit(res[0]);
     });
   }
   
@@ -76,7 +74,7 @@ const Post = () => {
 
                 </div>
                 <div className="post-button">
-                    <img src={PostButton} alt="" onClick={()=>{postSubmit(); textSubmit()}} />
+                    <img src={PostButton} alt="" onClick={()=>postSubmit()} />
                 </div>
             </div>
             <div className="post-footer">
