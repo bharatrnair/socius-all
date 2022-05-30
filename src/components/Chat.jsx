@@ -2,13 +2,17 @@ import React from 'react'
 import back from './../components/Assets/back.svg'
 import cam from './../components/Assets/cam.svg'
 import "./Chat.css"
+import { useNavigate } from "react-router-dom";
 
 const Chat = () => {
+  const navigate = useNavigate();
   return (
     <div className="mainChat">
         <div className="chatBody">
         <div className="chatHeader">
-        <img className='backButton' src={back} alt="" />
+        <img className='backButton' src={back} alt="" onClick={()=>{
+                navigate("/Home")
+                }}/>
         <div className="searchText">
         <input type="text" id='inp' placeholder='search...'/>
         </div>

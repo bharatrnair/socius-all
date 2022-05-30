@@ -114,8 +114,8 @@ const Home = () => {
         </div>
         <div className="homeFooter">
         <div className="footerImage">
-       <img src={home} alt="" onClick={()=>navigate("/Home")}/>
-       <p>home</p>
+       <img src={home} alt="" onClick={()=>navigate("/Profile")}/>
+       <p>profile</p>
        </div>
        <div className="footerImage">
          <img src={chat} alt="" onClick={()=>navigate("/Chat")}/>
@@ -130,7 +130,7 @@ const Home = () => {
          <p>search</p>
        </div>
        <div className="footerImage">
-         <img src={bell} alt="" onClick={()=>navigate("/Notification")}/>
+         <img src={bell} alt="" onClick={()=>navigate("/Notifications")}/>
          <p>notifications</p>
        </div>
 
